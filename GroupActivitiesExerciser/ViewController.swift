@@ -28,6 +28,9 @@ class ViewController: UIViewController {
 
     @IBAction func touchUpWaitForSession(_ sender: UIButton?) {
 
+        self.messageStatus?.text = nil
+        self.errorStatus?.text = nil
+
         self.groupActivityHandler = GroupActivityHandler(activity: ExerciserActivity(), delegate: self)
         groupActivityHandler?.beginWaitingForSessions()
 
@@ -47,16 +50,22 @@ class ViewController: UIViewController {
     @IBAction func touchUpJoinSession(_ sender: UIButton?) {
 
         groupActivityHandler?.joinSession()
+
+        updateStatus()
     }
 
     @IBAction func touchUpMessageRequestServices(_ sender: UIButton?) {
 
         groupActivityHandler?.send(message: ExerciserMessage(service: .requestServices))
+
+        updateStatus()
     }
 
     @IBAction func touchUpMessageRomoActivity(_ sender: UIButton?) {
 
         groupActivityHandler?.send(message: ExerciserMessage(service: .romoCommand(.requestStatus)))
+
+        updateStatus()
     }
 
     override func viewDidLoad() {
@@ -71,10 +80,8 @@ class ViewController: UIViewController {
 
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.connectionStatus?.text = "\(self.groupActivityHandler?.sessionStatus ?? "no session")"
+            self.connectionStatus?.text = "Session: \(self.groupActivityHandler?.sessionStatus ?? "no session")"
             self.connectionCount?.text = "\(self.groupActivityHandler?.participantCount ?? 0)"
-            self.messageStatus?.text = nil
-            self.errorStatus?.text = nil
         }
     }
 }
@@ -91,10 +98,7 @@ extension ViewController: FaceTimeMonitorDelegate, GroupActivityHandlerDelegate 
 
     func didConnect() {
 
-        DispatchQueue.main.async {
-
-            self.connectionStatus?.text = "Session Connected"
-        }
+        updateStatus()
     }
 
     func didDisconnect(reason: Error) {
