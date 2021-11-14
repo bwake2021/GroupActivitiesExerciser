@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4409FC627192B9A00F54BF3 /* RomoCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409FC527192B9A00F54BF3 /* RomoCommand.swift */; };
+		C4409FC827192C2000F54BF3 /* RomoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409FC727192C2000F54BF3 /* RomoStatus.swift */; };
 		C47277D42708F441001EF204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47277D32708F441001EF204 /* AppDelegate.swift */; };
 		C47277D62708F441001EF204 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47277D52708F441001EF204 /* SceneDelegate.swift */; };
 		C47277D82708F441001EF204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47277D72708F441001EF204 /* ViewController.swift */; };
@@ -16,6 +18,12 @@
 		C47277EB2708F443001EF204 /* GroupActivitiesExerciserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47277EA2708F443001EF204 /* GroupActivitiesExerciserTests.swift */; };
 		C47277F52708F443001EF204 /* GroupActivitiesExerciserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47277F42708F443001EF204 /* GroupActivitiesExerciserUITests.swift */; };
 		C47277F72708F443001EF204 /* GroupActivitiesExerciserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47277F62708F443001EF204 /* GroupActivitiesExerciserUITestsLaunchTests.swift */; };
+		C472780B2708F73C001EF204 /* ExerciserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47278042708F73C001EF204 /* ExerciserMessage.swift */; };
+		C472780C2708F73C001EF204 /* ExerciserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47278052708F73C001EF204 /* ExerciserService.swift */; };
+		C472780D2708F73C001EF204 /* ExerciserActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47278062708F73C001EF204 /* ExerciserActivity.swift */; };
+		C47278142708FB4D001EF204 /* UUID+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47278132708FB4D001EF204 /* UUID+zero.swift */; };
+		C4A8CC142712A0860013D73B /* GroupActivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8CC132712A0860013D73B /* GroupActivityHandler.swift */; };
+		C4FDE99527250B780082E641 /* FaceTimeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDE99427250B780082E641 /* FaceTimeMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4409FC527192B9A00F54BF3 /* RomoCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomoCommand.swift; sourceTree = "<group>"; };
+		C4409FC727192C2000F54BF3 /* RomoStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomoStatus.swift; sourceTree = "<group>"; };
 		C47277D02708F441001EF204 /* GroupActivitiesExerciser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupActivitiesExerciser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47277D32708F441001EF204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C47277D52708F441001EF204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,13 @@
 		C47277F02708F443001EF204 /* GroupActivitiesExerciserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupActivitiesExerciserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47277F42708F443001EF204 /* GroupActivitiesExerciserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesExerciserUITests.swift; sourceTree = "<group>"; };
 		C47277F62708F443001EF204 /* GroupActivitiesExerciserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesExerciserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C47278042708F73C001EF204 /* ExerciserMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciserMessage.swift; sourceTree = "<group>"; };
+		C47278052708F73C001EF204 /* ExerciserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciserService.swift; sourceTree = "<group>"; };
+		C47278062708F73C001EF204 /* ExerciserActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciserActivity.swift; sourceTree = "<group>"; };
+		C47278132708FB4D001EF204 /* UUID+zero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+zero.swift"; sourceTree = "<group>"; };
+		C4A8CC132712A0860013D73B /* GroupActivityHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupActivityHandler.swift; sourceTree = "<group>"; };
+		C4A8CC15271361A40013D73B /* GroupActivitiesExerciser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroupActivitiesExerciser.entitlements; sourceTree = "<group>"; };
+		C4FDE99427250B780082E641 /* FaceTimeMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceTimeMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +116,9 @@
 		C47277D22708F441001EF204 /* GroupActivitiesExerciser */ = {
 			isa = PBXGroup;
 			children = (
+				C4A8CC15271361A40013D73B /* GroupActivitiesExerciser.entitlements */,
+				C47278122708FB4D001EF204 /* Extensions */,
+				C47278032708F73C001EF204 /* GroupActivities */,
 				C47277D32708F441001EF204 /* AppDelegate.swift */,
 				C47277D52708F441001EF204 /* SceneDelegate.swift */,
 				C47277D72708F441001EF204 /* ViewController.swift */,
@@ -125,6 +145,28 @@
 				C47277F62708F443001EF204 /* GroupActivitiesExerciserUITestsLaunchTests.swift */,
 			);
 			path = GroupActivitiesExerciserUITests;
+			sourceTree = "<group>";
+		};
+		C47278032708F73C001EF204 /* GroupActivities */ = {
+			isa = PBXGroup;
+			children = (
+				C4FDE99427250B780082E641 /* FaceTimeMonitor.swift */,
+				C4A8CC132712A0860013D73B /* GroupActivityHandler.swift */,
+				C47278042708F73C001EF204 /* ExerciserMessage.swift */,
+				C4409FC527192B9A00F54BF3 /* RomoCommand.swift */,
+				C4409FC727192C2000F54BF3 /* RomoStatus.swift */,
+				C47278052708F73C001EF204 /* ExerciserService.swift */,
+				C47278062708F73C001EF204 /* ExerciserActivity.swift */,
+			);
+			path = GroupActivities;
+			sourceTree = "<group>";
+		};
+		C47278122708FB4D001EF204 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C47278132708FB4D001EF204 /* UUID+zero.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C472780B2708F73C001EF204 /* ExerciserMessage.swift in Sources */,
 				C47277D82708F441001EF204 /* ViewController.swift in Sources */,
 				C47277D42708F441001EF204 /* AppDelegate.swift in Sources */,
+				C4409FC627192B9A00F54BF3 /* RomoCommand.swift in Sources */,
+				C472780D2708F73C001EF204 /* ExerciserActivity.swift in Sources */,
 				C47277D62708F441001EF204 /* SceneDelegate.swift in Sources */,
+				C4FDE99527250B780082E641 /* FaceTimeMonitor.swift in Sources */,
+				C4A8CC142712A0860013D73B /* GroupActivityHandler.swift in Sources */,
+				C472780C2708F73C001EF204 /* ExerciserService.swift in Sources */,
+				C4409FC827192C2000F54BF3 /* RomoStatus.swift in Sources */,
+				C47278142708FB4D001EF204 /* UUID+zero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroupActivitiesExerciser/GroupActivitiesExerciser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8G7W6WCEM9;
@@ -465,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroupActivitiesExerciser/GroupActivitiesExerciser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8G7W6WCEM9;
